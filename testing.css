@@ -1,0 +1,39 @@
+.button{
+  width: 200%;
+  height: 200%;
+  background-color:rgba(242, 57, 153, 0.8) ;
+  position: relative;
+ 
+  cursor: poin ter;
+}
+.button i{
+  font-size: 160px;
+  position: absolute;
+  align-items: center;
+  
+  width: 500px;
+  height: 500px;
+  cursor: pointer;
+}
+@keyframes like {
+  75%{
+    transform: scale(1.25);
+  }
+}
+@keyframes dislike {
+  75%{
+    transform: scale(0.75);
+  }
+  
+}
+label .heart{
+  padding: 50px;
+  animation: like 0.5s ease 0s;
+  color: red;
+  
+
+}
+input:checked + label .heart{
+  color: orange ;
+  animation: dilike 0.5s ease 0s;
+}

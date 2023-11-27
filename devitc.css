@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.desc1 {
+    display: inline-flex;
+    justify-content: space-between;
+    background: linear-gradient(rgb(31, 31, 83),cornflowerblue,rgb(31,31,83));
+    width: 97%;
+    height: 70vh;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.nav-links {
+  flex: 1;
+  text-align: left;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 28px;
+}
+.dropdown-content ul li a {
+  font-size: 20px;
+}
+.nav-links ul li::after,
+.dropdown-content::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+}
+.nav-links ul li:hover::after,
+.dropdown-content a:hover:after {
+  width: 100%;
+}
+
+.dropdown-content {
+  width: 290px;
+  display: none;
+  position: absolute;
+  background-color: white;
+  text-align: left;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  font-size: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  transition: 1s;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+img {
+    object-fit: cover;
+    height: 40vh;
+    width: 70vh;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+    overflow:scroll;
+    margin-right: 50px;
+    overflow-x: hidden;
+}
+.feature1 {
+    padding-top: 30px;
+    font-size: 20px;
+}
+.feature1 h1 {
+    -webkit-text-stroke-color: aliceblue;
+    -webkit-text-stroke-width: 0.3px;
+}
+.feature1 p {
+    font-family:Verdana, Tahoma, sans-serif;
+    line-height: -4px;
+    margin-top: 40px;
+    color:rgb(217, 196, 171);
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: brown;
+    font-size: 25px;
+    font-style: italic;
+}
+.teams {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    padding: 10px;
+    margin: 30px;
+}
+.persons {
+    background-color: rgb(242, 240, 232);
+    padding: 40px;
+    text-align: center;
+    border-radius: 20px;
+}
+.persons i {
+    font-size: 4rem;
+    opacity: 0.7;
+}
+.rating {
+    display: inline-flex;
+}
+.rating i {
+    font-size: 25px;
+    margin-right: 10px;
+    color: green;
+}
+.devs h1 {
+    padding: 20px;
+    margin-left: 20px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="form.css" rel = "stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Posting Form</title>
+</head>
+<body>
+    <nav>
+          <div class="nav-links">
+            <ul class="list">
+              <li><a href="index.html">Home</a></li>
+              <li class="dropdown">
+                <a href="">Services</a>
+                <div class="dropdown-content">
+                  <ul>
+                    <li><a href="cse.html">Browse Jobs</a></li>
+
+                    <li><a href="form.html">Post Jobs</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+
+
+<h1>Job Posting Form</h1>
+
+<form action="/submit_job" method="post">
+    <label for="jobTitle">Job Title:</label>
+    <input type="text" id="jobTitle" name="jobTitle" required>
+
+    <label for="companyName">Company Name:</label>
+    <input type="text" id="companyName" name="companyName" required>
+
+    <label for="jobDescription">Job Description:</label>
+    <textarea id="jobDescription" name="jobDescription" rows="4" required></textarea>
+
+    <label for="jobRequirements">Job Requirements:</label>
+    <textarea id="jobRequirements" name="jobRequirements" rows="4" required></textarea>
+
+    <label for="applicationDeadline">Application Deadline:</label>
+    <input type="date" id="applicationDeadline" name="applicationDeadline" required>
+
+    <button type="submit">Submit Job</button>
+</form>
+
+</body>
+</html>

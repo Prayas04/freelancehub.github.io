@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="contactusc.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-links">
+        <ul class="list">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="">Services</a>
+            <div class="dropdown-content">
+              <ul>
+                <li><a href="cse.html">Browse Jobs</a></li>
+
+                <li><a href="form.html">Post Jobs</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container1">
+      <h1 class="logo1" id="freelance">
+        Freelance<span class="logo2">Hub</span>
+      </h1>
+      <p id="details1">
+        We would love to respond to your queries. Feel free to get in touch with
+        us.
+      </p>
+      <div class="contactbox">
+        <div class="contact-left">
+          <h3>Give your Feedback or Reviews</h3>
+          <form method="get">
+            <fieldset>
+              <label for="first-name"
+                >Enter Your First Name:
+                <input id="first-name" name="first-name" type="text" required
+              /></label>
+              <label for="last-name"
+                >Enter Your Last Name:
+                <input id="last-name" name="last-name" type="text"
+              /></label>
+              <label for="email"
+                >Enter Your Email:
+                <input id="email" name="email" type="email" required
+              /></label>
+              <label for="contactno."
+                >Enter Your ContactNo.:
+                <input id="contactno." name="conactno." type="tel" required
+              /></label>
+              <label for="File1">If you would like to add any files(zip,rar,png,jpg,jpeg,pdf....&lt;25mb) </label
+              ><input id="File1" name="File1" type="file" />
+            </fieldset>
+            <fieldset>
+              <label for="personal-account"
+                ><input
+                  id="personal-account"
+                  type="radio"
+                  name="account-type"
+                  class="inline"
+                />
+                Personal Account</label
+              >
+              <label for="business-account"
+                ><input
+                  id="business-account"
+                  type="radio"
+                  name="account-type"
+                  class="inline"
+                />
+                Business Account</label
+              >
+            </fieldset>
+            <fieldset>
+              <label for="age"
+                >Input your age (years):
+                <input id="age" type="number" name="age" min="13" max="120"
+              /></label>
+              <label for="bio"
+                >Issue Description:
+                <textarea
+                  id="bio"
+                  name="bio"
+                  rows="6"
+                  cols="30"
+                  placeholder="Write your review or suggestions or both..."
+                ></textarea>
+              </label>
+            </fieldset>
+            <input
+              id="submitb"
+              type="submit"
+              onclick="func1()"
+              value="Submit"
+            />
+            <script>
+              function func1() {
+                alert("Successfully Submitted");
+              }
+            </script>
+          </form>
+        </div>
+        <div class="contact-right">
+          <h1 id="dev">
+            Developers:&nbsp;&nbsp;<a href="devdet.html"
+              ><i class="fa fa-address-card"></i
+            ></a>
+          </h1>
+          <h3>Reach Us</h3>
+          <table>
+            <tr>
+              <td><i class="fa fa-envelope"></i> Email</td>
+              <td>abc@gmail.com</td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-phone"></i> Phone</td>
+              <td>+91 0123456789</td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-map-marker"></i> Address</td>
+              <td>213, zyz, India</td>
+            </tr>
+          </table>
+          <p>Follow us on:</p>
+          <div class="social">
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
